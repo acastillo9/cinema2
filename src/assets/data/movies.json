@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "image": "http://localhost:4200/assets/images/the-avengers.jpg",
+    "title": "The Avengers: Los Vengadores",
+    "synopsis": "Un reparto de superhéroes —incluidos Iron Man, el Increíble Hulk y Capitán América— se unen para salvar al mundo de una catástrofe."
+  },
+  {
+    "id": 2,
+    "image": "http://localhost:4200/assets/images/star-wars-el-retorno-del-jedi.jpg",
+    "title": "Star Wars: El regreso del Jedi",
+    "synopsis": "La trilogía épica original concluye con el ataque final de las fuerzas rebeldes contra el Imperio y el fatídico enfrentamiento entre Luke Skywalker y Darth Vader."
+  }
+]

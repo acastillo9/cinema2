@@ -1,0 +1,14 @@
+<article class="container">
+  <section class="peliculas row">
+    <div class="card-wrapper col-12 col-sm-6 col-lg-4 mb-3" *ngFor="let movie of movies">
+      <div class="card">
+        <img [src]="movie.image" class="card-img-top" alt="Avengers">
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.synopsis }}</p>
+          <a href="#" class="btn btn-primary">ver más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>

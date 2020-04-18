@@ -1,0 +1,19 @@
+header {
+  background-color: #142850;
+  color: white;
+  padding: 20px;
+}
+header > h1 {
+  text-align: center;
+}
+main {
+  background-color: #27496d;
+  padding: 10px;
+}
+main a {
+  color: white;
+}
+main a:hover {
+  color: white;
+  background-color: #0c7b93;
+}
