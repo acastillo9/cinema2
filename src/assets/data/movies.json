@@ -1,14 +1,312 @@
 [
   {
-    "id": 1,
-    "image": "http://localhost:4200/assets/images/the-avengers.jpg",
-    "title": "The Avengers: Los Vengadores",
-    "synopsis": "Un reparto de superhéroes —incluidos Iron Man, el Increíble Hulk y Capitán América— se unen para salvar al mundo de una catástrofe."
+    "id" : 1,
+    "title" : "Volver al futuro",
+    "year" : 1985,
+    "rating" : "13",
+    "duration" : 6960000,
+    "synopsis" : "El excéntrico inventor Doc Brown convierte un DeLorean en una máquina del tiempo que accidentalmente envía a su joven amigo, Marty McFly, 30 años en el pasado.",
+    "actors" : [ 
+        {
+            "id" : 1,
+            "name" : "Michael J. Fox",
+            "character" : "Marty McFly"
+        }, 
+        {
+            "id" : 2,
+            "name" : "Christopher Lloyd",
+            "character" : "Dr. Emmett Brown"
+        }, 
+        {
+            "id" : 3,
+            "name" : "Lea Thompson",
+            "character" : "Lorraine Baines"
+        }
+    ],
+    "genres" : [ 
+        "Comedias familiares", 
+        "Acción y aventuras", 
+        "Aventuras"
+    ],
+    "image" : "http://localhost:4200/assets/images/back-to-the-future.jpg"
   },
   {
-    "id": 2,
-    "image": "http://localhost:4200/assets/images/star-wars-el-retorno-del-jedi.jpg",
-    "title": "Star Wars: El regreso del Jedi",
-    "synopsis": "La trilogía épica original concluye con el ataque final de las fuerzas rebeldes contra el Imperio y el fatídico enfrentamiento entre Luke Skywalker y Darth Vader."
-  }
+    "id" : 2,
+    "title" : "Star Wars: Una nueva esperanza",
+    "year" : 1977,
+    "rating" : "13",
+    "duration" : 7440000,
+    "synopsis" : "Obi-Wan Kenobi es el guía del intrépido Luke Skywalker en su misión para rescatar a la princesa Leia de manos de Darth Vader, en la épica batalla entre el bien y el mal.",
+    "actors" : [ 
+        {
+            "id" : 4,
+            "name" : "Mark Hamill",
+            "character" : "Luke Skywalker"
+        }, 
+        {
+            "id" : 5,
+            "name" : "Harrison Ford",
+            "character" : "Han Solo"
+        }, 
+        {
+            "id" : 6,
+            "name" : "Carrie Fisher",
+            "character" : "Princess Leia Organa"
+        }
+    ],
+    "genres" : [ 
+        "Clásicos de acción y aventuras", 
+        "Acción y aventuras", 
+        "Aventuras"
+    ],
+    "image" : "http://localhost:4200/assets/images/star-wars-a-new-hope.jpg"
+  },
+  {
+    "id" : 3,
+    "title" : "Star Wars: El Imperio contraataca",
+    "year" : 1980,
+    "rating" : "13",
+    "duration" : 7620000,
+    "synopsis" : "La saga épica continúa. Con la esperanza de derrotar al Imperio, Luke Skywalker inicia el camino del Jedi junto al viejo maestro Yoda.",
+    "actors" : [ 
+        {
+            "id" : 4,
+            "name" : "Mark Hamill",
+            "character" : "Luke Skywalker"
+        }, 
+        {
+            "id" : 5,
+            "name" : "Harrison Ford",
+            "character" : "Han Solo"
+        }, 
+        {
+            "id" : 6,
+            "name" : "Carrie Fisher",
+            "character" : "Princess Leia Organa"
+        }
+    ],
+    "genres" : [ 
+        "Clásicos de acción y aventuras", 
+        "Acción y aventuras", 
+        "Aventuras"
+    ],
+    "image" : "http://localhost:4200/assets/images/star-wars-the-empire-strikes-back.jpg"
+  },
+  {
+    "id" : 4,
+    "title" : "Star Wars: El regreso del Jedi",
+    "year" : 1983,
+    "rating" : "13",
+    "duration" : 8040000,
+    "synopsis" : "La trilogía épica original concluye con el ataque final de las fuerzas rebeldes contra el Imperio y el fatídico enfrentamiento entre Luke Skywalker y Darth Vader.",
+    "actors" : [ 
+        {
+            "id" : 4,
+            "name" : "Mark Hamill",
+            "character" : "Luke Skywalker"
+        }, 
+        {
+            "id" : 5,
+            "name" : "Harrison Ford",
+            "character" : "Han Solo"
+        }, 
+        {
+            "id" : 6,
+            "name" : "Carrie Fisher",
+            "character" : "Princess Leia Organa"
+        }
+    ],
+    "genres" : [ 
+        "Clásicos de acción y aventuras", 
+        "Acción y aventuras", 
+        "Aventuras"
+    ],
+    "image" : "http://localhost:4200/assets/images/star-wars-el-retorno-del-jedi.jpg"
+  },
+  {
+    "id" : 5,
+    "title" : "The Avengers: Los Vengadores",
+    "year" : 2012,
+    "rating" : "13",
+    "duration" : 8640000,
+    "synopsis" : "Un reparto de superhéroes —incluidos Iron Man, el Increíble Hulk y Capitán América— se unen para salvar al mundo de una catástrofe.",
+    "actors" : [ 
+        {
+            "id" : 7,
+            "name" : "Robert Downey Jr.",
+            "character" : "Tony Stark - Iron Man"
+        }, 
+        {
+            "id" : 8,
+            "name" : "Chris Evans",
+            "character" : "Steve Rogers - Captain America"
+        }, 
+        {
+            "id" : 9,
+            "name" : "Scarlett Johansson",
+            "character" : "Natasha Romanoff - Black Widow"
+        }
+    ],
+    "genres" : [ 
+        "Thrillers de acción", 
+        "Acción y aventuras", 
+        "Aventuras"
+    ],
+    "image" : "http://localhost:4200/assets/images/the-avengers.jpg"
+  },
+  {
+    "id" : 6,
+    "title" : "Iron Man: El Hombre de Hierro",
+    "year" : 2008,
+    "rating" : "13",
+    "duration" : 7560000,
+    "synopsis" : "Cuando el afamado industrial Tony Stark es capturado, construye una armadura de alta tecnología para escapar. Ahora, debe salvar el mundo como superhéroe.",
+    "actors" : [ 
+        {
+            "id" : 7,
+            "name" : "Robert Downey Jr.",
+            "character" : "Tony Stark - Iron Man"
+        }, 
+        {
+            "id" : 10,
+            "name" : "Terrence Howard",
+            "character" : "Rhodey"
+        }, 
+        {
+            "id" : 11,
+            "name" : "Jeff Bridges",
+            "character" : "Obadiah Stane"
+        }
+    ],
+    "genres" : [ 
+        "Películas de historietas y superhéroes", 
+        "Acción y aventuras", 
+        "Ciencia ficción y fantasía"
+    ],
+    "image" : "http://localhost:4200/assets/images/iron-man.jpg"
+  },
+  {
+    "id" : 7,
+    "title" : "Capitán América: El primer vengador",
+    "year" : 2011,
+    "rating" : "13",
+    "duration" : 7440000,
+    "synopsis" : "Durante la Segunda Guerra Mundial, el frágil y enclenque Steve Rogers se ofrece de voluntario para experimentos científicos y surge el supersoldado Capitán América.",
+    "actors" : [ 
+        {
+            "id" : 8,
+            "name" : "Chris Evans",
+            "character" : "Steve Rogers - Captain America"
+        }, 
+        {
+            "id" : 12,
+            "name" : "Hayley Atwell",
+            "character" : "Peggy Carter"
+        }, 
+        {
+            "id" : 13,
+            "name" : "Sebastian Stan",
+            "character" : "James Buchanan 'Bucky' Barnes"
+        }
+    ],
+    "genres" : [ 
+        "Acción y aventuras militares", 
+        "Acción y aventuras", 
+        "Aventuras"
+    ],
+    "image" : "http://localhost:4200/assets/images/captain-america.jpg"
+  },
+  {
+    "id" : 8,
+    "title" : "El conjuro 2",
+    "year" : 2016,
+    "rating" : "16",
+    "duration" : 7980000,
+    "synopsis" : "En Londres, espíritus malignos aterrorizan a una madre soltera y sus cuatro hijos, pero para eso están los cazadores de fantasmas Ed y Lorraine Warren.",
+    "actors" : [ 
+        {
+            "id" : 14,
+            "name" : "Patrick Wilson",
+            "character" : "Ed Warren"
+        }, 
+        {
+            "id" : 15,
+            "name" : "Vera Farmiga",
+            "character" : "Lorraine Warren"
+        }, 
+        {
+            "id" : 16,
+            "name" : "Madison Wolfe",
+            "character" : "Janet Hodgson"
+        }
+    ],
+    "genres" : [ 
+        "Películas basadas en la vida real", 
+        "Películas de terror", 
+        "Películas de terror sobrenaturales"
+    ],
+    "image" : "http://localhost:4200/assets/images/the-conjuring-2.jpg"
+  },
+  {
+    "id" : 9,
+    "title" : "Toy Story",
+    "year" : 1995,
+    "rating" : "7",
+    "duration" : 4860000,
+    "synopsis" : "El vaquero Woody era el juguete favorito de Andy. Claro, hasta que llega Buzz Lightyear, un nuevo y reluciente héroe espacial que toma por asalto el cuarto de juegos.",
+    "actors" : [ 
+        {
+            "id" : 17,
+            "name" : "Tom Hanks",
+            "character" : "Woody"
+        }, 
+        {
+            "id" : 18,
+            "name" : "Tim Allen",
+            "character" : "Buzz Lightyear"
+        }, 
+        {
+            "id" : 19,
+            "name" : "Don Rickles",
+            "character" : "Mr. Potato Head"
+        }
+    ],
+    "genres" : [ 
+        "Comedias familiares", 
+        "Películas infantiles y familiares", 
+        "Películas de Disney"
+    ],
+    "image" : "http://localhost:4200/assets/images/toy-story.jpg"
+  },
+  {
+    "id" : 10,
+    "title" : "Harry Potter y las Reliquias de la Muerte: Parte 1",
+    "year" : 2010,
+    "rating" : "13",
+    "duration" : 8760000,
+    "synopsis" : "En la primera parte del desenlace de la serie de Harry Potter, Harry deja Hogwarts para destruir los Horrocruxes restantes.",
+    "actors" : [ 
+        {
+            "id" : 20,
+            "name" : "Daniel Radcliffe",
+            "character" : "Harry Potter"
+        }, 
+        {
+            "id" : 21,
+            "name" : "Rupert Grint",
+            "character" : "Ron Weasley"
+        }, 
+        {
+            "id" : 22,
+            "name" : "Emma Watson",
+            "character" : "Hermione Granger"
+        }
+    ],
+    "genres" : [ 
+        "Películas basadas en libros", 
+        "Acción y aventuras", 
+        "Aventuras"
+    ],
+    "image" : "http://localhost:4200/assets/images/harry-potter.jpg"
+}
 ]

@@ -7,18 +7,26 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MoviesComponent } from './movies/movies.component';
 import { ActorsComponent } from './actors/actors.component';
+import { MovieComponent } from './movie/movie.component';
+import { Duration } from './pipes/duration';
+import { CommentsComponent } from './comments/comments.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MoviesComponent,
-    ActorsComponent
+    ActorsComponent,
+    MovieComponent,
+    Duration,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

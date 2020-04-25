@@ -1,0 +1,31 @@
+{
+  "id" : 1,
+  "title" : "Volver al futuro",
+  "year" : 1985,
+  "rating" : "13",
+  "duration" : 6960000,
+  "synopsis" : "El excéntrico inventor Doc Brown convierte un DeLorean en una máquina del tiempo que accidentalmente envía a su joven amigo, Marty McFly, 30 años en el pasado.",
+  "actors" : [ 
+      {
+          "id" : 1,
+          "name" : "Michael J. Fox",
+          "character" : "Marty McFly"
+      }, 
+      {
+          "id" : 2,
+          "name" : "Christopher Lloyd",
+          "character" : "Dr. Emmett Brown"
+      }, 
+      {
+          "id" : 3,
+          "name" : "Lea Thompson",
+          "character" : "Lorraine Baines"
+      }
+  ],
+  "genres" : [ 
+      "Comedias familiares", 
+      "Acción y aventuras", 
+      "Aventuras"
+  ],
+  "image" : "http://localhost:4200/assets/images/back-to-the-future.jpg"
+}

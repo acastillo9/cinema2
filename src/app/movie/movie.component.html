@@ -1,0 +1,37 @@
+<article class="movies-wrapper">
+
+  <div class="container">
+    <section *ngIf="movie" class="pelicula">
+      <header class="cabecera-pelicula">
+        <h4>{{ movie.title }}</h4>
+        <p>{{ movie.synopsis }}</p>
+      </header>
+      <section class="cuerpo-pelicula">
+        <img class="imagen-pelicula" src="{{ movie.image }}" alt="{{ movie.title }}">
+        <p>Número de comentarios: {{numberComments}}</p>
+        <h5>Caracteristicas</h5>
+        <ul class="caracteristicas">
+          <li><b>Año:</b> {{ movie.year }}</li>
+          <li><b>Clasificación:</b> {{ movie.rating }}</li>
+          <li><b>Duración:</b> {{ movie.duration | duration }}</li>
+          <li>
+            <b>Generos:</b>
+            <ul class="generos">
+              <li *ngFor="let genre of movie.genres">{{ genre }}</li>
+            </ul>
+          </li>
+        </ul>
+        <h5>Actores</h5>
+        <ul class="actores">
+          <li *ngFor="let actor of movie.actors">
+            <a href="#">{{ actor.name }}</a>
+            <p><b>Personaje:</b> {{ actor.character }}</p>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <app-comments></app-comments>
+  </div>
+
+</article>

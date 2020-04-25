@@ -15,4 +15,8 @@ export class MoviesService {
   public getAllMovies(): Observable<IMovie[]> {
     return this.http.get<IMovie[]>('/assets/data/movies.json');
   }
+
+  public getMovies(id: number): Observable<IMovie> {
+    return this.http.get<IMovie>('/assets/data/' + id + '.json');
+  }
 }

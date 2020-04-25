@@ -1,0 +1,18 @@
+<div class="comments p-3 mb-5">
+
+  <div class="comments-list p-2 mb-3">
+    <p class="comment" *ngFor="let comment of comments"><b>{{ comment.name }}:</b> {{ comment.comment }}</p>
+  </div>
+
+  <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <div class="form-group">
+      <label for="comment">Comentario</label>
+      <textarea class="form-control" name="comment" id="comment" cols="30" rows="5" formControlName="comment"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!commentForm.valid">Comentar</button>
+  </form>
+</div>

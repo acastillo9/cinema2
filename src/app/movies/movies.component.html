@@ -6,7 +6,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ movie.title }}</h5>
           <p class="card-text">{{ movie.synopsis }}</p>
-          <a href="#" class="btn btn-primary">ver más</a>
+          <a [routerLink]="['/peliculas', movie.id]" class="btn btn-primary">ver más</a>
         </div>
       </div>
     </div>
