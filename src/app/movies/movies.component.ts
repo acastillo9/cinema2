@@ -16,8 +16,19 @@ export class MoviesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.moviesService.getAllMovies().subscribe((movies: IMovie[]) => {
+    this.loadMovies();
+  }
+
+  loadMovies() {
+    this.moviesService.getMovies().subscribe((movies: IMovie[]) => {
       this.movies = movies;
+    });
+  }
+
+  deleteMovie(movieId: string) {
+    this.moviesService.deleteMovie(movieId).subscribe(response => {
+      console.log(response);
+      this.loadMovies();
     });
   }
 

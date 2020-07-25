@@ -1,7 +1,7 @@
 import { IActor } from './actor';
 
 export class IMovie {
-  id: number;
+  id: string;
   title: string;
   year: number;
   rating: string;

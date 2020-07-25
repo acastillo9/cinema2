@@ -1,12 +1,21 @@
 <article class="container">
+  <button type="button" class="btn btn-light mb-3" routerLink="/crear-pelicula"><i class="fas fa-plus-circle"></i> Agregar pelicula</button>
   <section class="peliculas row">
     <div class="card-wrapper col-12 col-sm-6 col-lg-4 mb-3" *ngFor="let movie of movies">
       <div class="card">
+        <div class="buttons position-absolute mt-1">
+          <button type="button" class="btn btn-light mx-1" [routerLink]="['/crear-pelicula', movie.id]">
+            <i class="fas fa-edit"></i>
+          </button>
+          <button type="button" class="btn btn-light mx-1" (click)="deleteMovie(movie.id)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
         <img [src]="movie.image" class="card-img-top" alt="Avengers">
         <div class="card-body">
           <h5 class="card-title">{{ movie.title }}</h5>
           <p class="card-text">{{ movie.synopsis }}</p>
-          <a [routerLink]="['/peliculas', movie.id]" class="btn btn-primary">ver más</a>
+          <button type="button" class="btn btn-link float-right" [routerLink]="['/peliculas', movie.id]">ver más</button>
         </div>
       </div>
     </div>

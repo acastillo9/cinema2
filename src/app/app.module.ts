@@ -11,6 +11,7 @@ import { MovieComponent } from './movie/movie.component';
 import { Duration } from './pipes/duration';
 import { CommentsComponent } from './comments/comments.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SaveMovieComponent } from './save-movie/save-movie.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ActorsComponent,
     MovieComponent,
     Duration,
-    CommentsComponent
+    CommentsComponent,
+    SaveMovieComponent
   ],
   imports: [
     BrowserModule,

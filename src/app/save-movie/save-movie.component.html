@@ -1,0 +1,131 @@
+<div class="container">
+  <h1>CREAR PELICULA</h1>
+  <form [formGroup]="movieForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        placeholder="nombre de la pelicula"
+        formControlName="title"
+      />
+    </div>
+    <div class="form-group">
+      <label for="synopsis">Sinopsis</label>
+      <textarea
+        class="form-control"
+        id="synopsis"
+        rows="3"
+        placeholder="Sinopsis de la pelicula"
+        formControlName="synopsis"
+      ></textarea>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="year">Año</label>
+        <input
+          type="text"
+          class="form-control"
+          id="year"
+          placeholder="Año de estreno"
+          formControlName="year"
+        />
+      </div>
+      <div class="form-group col-md-4">
+        <label for="rating">Clasificación</label>
+        <input
+          type="text"
+          class="form-control"
+          id="rating"
+          placeholder="Ej. PG13"
+          formControlName="rating"
+        />
+      </div>
+      <div class="form-group col-md-4">
+        <label for="duration">Duración</label>
+        <input
+          type="text"
+          class="form-control"
+          id="duration"
+          placeholder="Duración en milisegundos"
+          formControlName="duration"
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="image">Imagen</label>
+      <input
+        type="text"
+        class="form-control"
+        id="image"
+        placeholder="URL de la imagen de la pelicula"
+        formControlName="image"
+      />
+    </div>
+    <div formArrayName="genres">
+      <h3>Generos</h3>
+      <button type="button" class="btn btn-light mb-3" (click)="addGenre()">
+        <i class="fas fa-plus-circle"></i> Agregar genero
+      </button>
+
+      <div *ngFor="let genre of genres.controls; let i = index">
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <input
+              type="text"
+              class="form-control"
+              [id]="i"
+              [formControlName]="i"
+              placeholder="Genero de la pelicula"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div formArrayName="actors">
+      <h3>Actores</h3>
+      <button type="button" class="btn btn-light mb-3" (click)="addActor()">
+        <i class="fas fa-plus-circle"></i> Agregar actor
+      </button>
+
+      <div *ngFor="let actor of actors.controls; let i = index">
+        <div [formGroupName]="i">
+          <h4>Actor</h4>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label [for]="i + 'name'">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                [id]="i + 'name'"
+                placeholder="Nombre del actor"
+                formControlName="name"
+              />
+            </div>
+
+            <div class="form-group col-md-6">
+              <label [for]="i + 'character'">Personaje</label>
+              <input
+                type="text"
+                class="form-control"
+                [id]="i + 'character'"
+                placeholder="Personaje que interpreto"
+                formControlName="character"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-light my-3"
+      [disabled]="!movieForm.valid"
+    >
+    <i class="fas fa-save"></i> Guardar pelicula
+    </button>
+  </form>
+</div>

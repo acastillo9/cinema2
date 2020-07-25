@@ -1,7 +1,5 @@
 .comments {
-  background-color: azure;
-  box-shadow: 0px 6px 20px -12px rgba(0,0,0,0.75);
-  border-radius: 0.5rem;
+  background-color: #f8f9fa;
 }
 .comments-list {
   background-color: white;

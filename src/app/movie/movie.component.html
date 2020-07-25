@@ -1,14 +1,13 @@
 <article class="movies-wrapper">
 
   <div class="container">
-    <section *ngIf="movie" class="pelicula">
+    <section *ngIf="movie" class="pelicula mb-5">
       <header class="cabecera-pelicula">
-        <h4>{{ movie.title }}</h4>
+        <img class="imagen-pelicula" src="{{ movie.image }}" alt="{{ movie.title }}">
+        <h1>{{ movie.title }}</h1>
         <p>{{ movie.synopsis }}</p>
       </header>
       <section class="cuerpo-pelicula">
-        <img class="imagen-pelicula" src="{{ movie.image }}" alt="{{ movie.title }}">
-        <p>Número de comentarios: {{numberComments}}</p>
         <h5>Caracteristicas</h5>
         <ul class="caracteristicas">
           <li><b>Año:</b> {{ movie.year }}</li>
@@ -31,6 +30,7 @@
       </section>
     </section>
 
+    <h3>Comentarios ({{numberComments}})</h3>
     <app-comments></app-comments>
   </div>
 
